@@ -71,7 +71,7 @@ class ActivityController extends Controller
         $activity->update($request->all());
         return redirect()->route('activities.index');
     }
-//change
+
     public function destroy(Activity $activity)
     {
         $activity->delete();
