@@ -2,29 +2,30 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\SearchController;
-use App\Http\Controllers\PageController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PageController;
+use Illuminate\Support\Facades\Route;
 
-Route::resource('contacts', ContactController::class);
-
-Route::resource('bookings', BookingController::class);
-
-
-Route::resource('rooms', RoomController::class);
-
-Route::resource('activities', ActivityController::class);
-
-
+// General pages
 Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/offers', [PageController::class, 'offers'])->name('offers');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-
-
+Route::get('/rooms', [PageController::class, 'rooms'])->name('rooms');
 Route::get('/search', [SearchController::class, 'search'])->name('search');
 
+// Contact form
+Route::get('/contact', [ContactController::class, 'create'])->name('contact');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');
+
+// Resources
+Route::resource('contacts', ContactController::class)->except(['create', 'store']); // Since these are already handled above
+Route::resource('bookings', BookingController::class);
+Route::resource('rooms', RoomController::class);
+Route::resource('activities', ActivityController::class);
+
+// Dashboard and Profile
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -35,5 +36,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-
+// Authentication routes
 require __DIR__.'/auth.php';

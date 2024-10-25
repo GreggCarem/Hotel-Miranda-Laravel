@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->date('date');
+            $table->date('date')->default(DB::raw('CURRENT_DATE'));
             $table->string('name');
             $table->string('email');
             $table->text('message');
