@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
+
+//Check that all the crud is not implimented 
 class ContactController extends Controller
 {
 

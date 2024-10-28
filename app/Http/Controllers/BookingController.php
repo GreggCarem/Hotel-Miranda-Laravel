@@ -24,7 +24,7 @@ class BookingController extends Controller
     
     public function store(Request $request)
     {
-       
+       //off id the user_id
         $validatedData = $request->validate([
             'user_id' => 'required|exists:users,id',
             'room_id' => 'required|exists:rooms,id',

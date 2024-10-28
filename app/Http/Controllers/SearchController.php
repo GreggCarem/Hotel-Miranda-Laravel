@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class SearchController extends Controller
 {
     public function search(Request $request)
+
+    //change so only the user is availabke 
     {
         $query = $request->input('query');
 
