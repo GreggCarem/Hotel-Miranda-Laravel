@@ -45,7 +45,7 @@ Route::resource('rooms',Rooms::class)->except(['index','indexoffers','availabili
 //Rutas Bookings
 Route::get('bookings', [Bookings::class, 'index'])->name('bookings.index');
 Route::resource('bookings',Bookings::class)->except(['index'])->middleware('auth');
-//Rutas Messages
+
 Route::get('messages', [Messages::class, 'index'])->name('messages.index');
 Route::resource('messages',Messages::class)->except(['index'])->middleware('auth');
 
@@ -53,7 +53,7 @@ Route::resource('messages',Messages::class)->except(['index'])->middleware('auth
 Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
 
 Route::post('/messages', [Messages::class, 'store'])->name('messages.store');
-//Rutas login
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
