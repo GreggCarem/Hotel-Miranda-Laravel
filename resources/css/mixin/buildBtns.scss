@@ -1,0 +1,12 @@
+@mixin btns($width, $height){
+    width: $width;
+    height: $height;
+    font-family: 'Archivo-Regular';
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.799999952316284px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+}

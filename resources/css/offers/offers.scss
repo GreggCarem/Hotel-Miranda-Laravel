@@ -1,0 +1,286 @@
+@use '../mixin/buildHeaderMixin.scss';
+@use '../mixin/configImgMixer.scss';
+.offers{
+    &__img{
+        @include configImgMixer.imgconfig('../../imgs/luxurydoublebed.jpg',100%,162px);
+        position: relative;
+        margin-bottom: 1em;
+        &__precio1{
+            font-family: 'Archivo-Regular';
+            font-size: 1.44rem;
+            font-weight: 700;
+            line-height: 25.02px;
+            text-align: right;
+            color: #BEAD8E;
+            position: absolute;
+            display: block;
+            right: 1em;
+            bottom: 2.2em;
+            & span{
+                font-family: 'Archivo-Regular';
+                font-size: 0.75rem;
+                font-weight: 700;
+                line-height: 13.06px;
+            }
+        }
+        &__precio2{
+            font-family: 'Archivo-Regular';
+            font-size: 1.88rem;
+            font-weight: 700;
+            line-height: 32.64px;
+            text-align: right;
+            color: #DE5777; 
+            position: absolute;   
+            display: block;
+            right: .8em;
+            bottom: .3em;
+            & span{
+                font-family: 'Archivo-Regular';
+                font-size: 0.75rem;
+                font-weight: 700;
+                line-height: 13.06px;
+            }
+        }
+        &__absolute{
+            display: none;
+        }           
+    }
+    &__sub{
+        font-family: 'Archivo-Regular';
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+    &__tit{
+        font-family: 'OldStandardTT-Regular';
+        font-size: 2.50rem;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.440000057220459px;
+        text-align: left;
+        margin-bottom: .6em;
+    }
+    &__p{
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #777777;
+        margin-bottom: 1.5em;
+    }
+    &__lista1,&__lista2{
+        display: inline-block;
+        margin-right: 2em;
+        & ul{
+            list-style: none;
+            & li{
+                font-family: 'Roboto';
+                font-size: 0.94rem;
+                font-weight: 500;
+                line-height: 17.58px;
+                text-align: left;         
+                color: #777777;  
+                margin-bottom: 1em;
+                & img{
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+    &__btn{
+        @include buildHeaderMixin.btnsFirst();
+        margin-top: 1em;
+    }
+}
+.contentaux{
+    width: 90%;
+    box-shadow: 0px 14px 24px 0px #B8B8B81A;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    &:nth-child(1){
+        margin-top: 3em;
+    }
+}
+.contentaux2{
+    padding: 0 1em;
+    padding-bottom: 2em;
+    & .contentPriceAux{
+        display: none;
+    }
+}
+
+.popular{
+    background-color: #222222;
+    padding: 3.5em 0;
+    &__sub{
+        font-family: 'Archivo-Regular';
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        text-align: center;
+        margin-bottom: 1em;
+        color: #BDAC8D;
+    }
+    &__tit{
+        font-family: 'OldStandardTT-Regular';
+        font-size: 2.50rem;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: -1.440000057220459px;
+        text-align: center;
+        margin-bottom: .6em;
+        color: #fff;
+    }
+}
+.room{
+    &--white{
+        width: 20.938em;
+        background-color: #fff;
+        padding-bottom: 2em;
+        margin: 0 auto;
+    }
+    &--offers{
+        padding-bottom: 3rem;
+    }
+}
+.contentoffersAux{
+    position: relative;
+    margin-bottom: 4rem;
+} 
+.swiper-button-next--posOfeert{
+    top: 9em !important;
+}
+.slider__content__topbar--posOffers{
+    width: 80%;
+    top: 90% !important;
+    left: 10%;
+}
+.listblock{
+    display: none;
+}
+
+@media only screen and (min-width:1000px){
+    .slider--offer{
+        padding-bottom: 3rem;
+    }
+    .contentoffersAux{
+        & .slider__content__topbar--posOffers{
+            left: 9% !important;
+        }
+    } 
+    
+    .room{
+        &--offers{
+            width: 370px !important;
+            height: 438px !important;
+            background: #fff;
+        }
+        &--white{
+            padding-bottom: 3rem !important;
+            background: #222222;
+        }
+    }
+    .offers{
+        width: 73.125em;
+        margin: 0 auto;
+        &__img{
+            height: 35.625em;
+            &__precio1,&__precio2{
+                display: none !important;
+            }
+            &__absolute1{
+                display: block !important;
+                font-size: 1.88rem;
+                font-weight: 700;
+                line-height: 43.52px;
+                color: #BEAD8E;
+                position: absolute;
+                right: 1.5em;
+                top: 1.6em;
+                & span{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 17.41px;
+                    text-align: right;
+                    color: #BEAD8E;
+                }
+            }
+            &__absolute2{
+                display: block !important;
+                font-size: 2.50rem;
+                font-weight: 700;
+                line-height: 32.64px;
+                color: #DE5777;
+                position: absolute;
+                right: 1.4em;
+                top: 2.5em;
+                & span{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 17.41px;
+                    text-align: right;
+                    color: #DE5777;
+                }
+            }
+        }
+        &__tit{
+            border-bottom: 2px solid #ECECEC;
+            padding-bottom: 1em;
+        }
+        &__p{
+            width: 31em;
+        }
+    }
+    .contentaux2{
+        position: absolute;
+        padding: 3.75em 3.661em;
+        z-index: 2000;
+        background: #fff;
+        bottom: -70%;
+        left: 6%;
+        border-top: 6px solid #BDAC8D;
+        &--flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        & .contentPriceAux{
+            display: block;
+        }
+    }
+    .contentaux{
+        border-top: 6px solid #BDAC8D;
+        position: relative;
+        margin-bottom: 30.438em;
+    }
+    .listnone{
+        display: none;
+    }
+    .listblock{
+        display: block;
+        &__listan1{
+            margin-right: 5em;
+        }
+    }
+
+
+    .popular{
+        &--dark{
+            background: #222222;
+        }
+        &__tit{
+            font-size: 5rem;
+            font-weight: 400;
+            line-height: 80px;
+            letter-spacing: -2.4000000953674316px;
+            margin-bottom: 1em;
+        }
+        &__sub{
+            margin-bottom: 5em;
+        }
+    }
+}

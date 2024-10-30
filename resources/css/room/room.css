@@ -1,0 +1,228 @@
+.aboutHeaderRoom {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.contentAuxRoom {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.swiper-pagination-bull {
+  position: relative !important;
+}
+.swiper-pagination-bull span {
+  font-family: "oswald";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+.swiper-pagination-bull .swiper-pagination-bullet {
+  background: none;
+}
+.swiper-pagination-bull .swiper-pagination-bullet-active {
+  border-radius: 0%;
+  width: 35px;
+  height: 35px;
+  align-content: center;
+  color: #fff;
+}
+
+.sliderRooms {
+  width: auto !important;
+  height: auto !important;
+  padding: 0 1rem !important;
+  margin-top: 4rem;
+}
+.sliderRooms__contentPagination {
+  position: relative;
+}
+
+.slider__content {
+  height: -moz-max-content;
+  height: max-content;
+}
+.slider__content__topbar {
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  right: 0;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider__content__topbar__img {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/bed.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img2 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/wifi.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img3 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/car.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img4 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/acondicionado.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img5 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/gym.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img6 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/tabaco.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__img7 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/alcohol.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.room__imgRoom {
+  width: 100%;
+  height: 100%;
+}
+.room__tit {
+  width: 100%;
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+.room__p {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.8em;
+  width: 18.125em;
+  font-family: "Roboto";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+.room__content {
+  width: 100%;
+  text-align: -webkit-center;
+}
+.room__content__precio {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BEAD8E;
+}
+.room__content__state {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 17.41px;
+  color: #BDBDBD;
+}
+
+@media only screen and (min-width: 700px) {
+  .contentAuxRoom {
+    width: 35rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .swiper-pagination-bull span {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  .swiper-pagination-bull .swiper-pagination-bullet {
+    background: none;
+  }
+  .swiper-pagination-bull .swiper-pagination-bullet-active {
+    border-radius: 0%;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    color: #fff;
+  }
+  .sliderRooms {
+    margin-top: 8rem;
+  }
+  .sliderRooms__contentPagination {
+    margin-bottom: 3rem;
+  }
+  .sliderRooms__contentPagination .swiper-but-room {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .sliderRooms .swiper-wrapper {
+    justify-content: center;
+  }
+  .aboutheader__tit--dim {
+    width: 27.875em !important;
+  }
+  .swiperrooms--dim {
+    width: 370px !important;
+  }
+  .room__imgRoom--dim {
+    height: 240px;
+  }
+  .slider__content__topbar {
+    width: 100%;
+    height: 3.125em;
+    right: 2em;
+    top: -10% !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+  .contentAuxRoom {
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+    padding-top: 4rem;
+  }
+}/*# sourceMappingURL=room.css.map */

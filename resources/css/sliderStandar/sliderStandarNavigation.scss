@@ -1,0 +1,52 @@
+.swiperStandar{
+    width: 90%;
+    margin: 0 auto;
+    height: 22.875em;
+}
+.swiperNormal{
+    margin-top: 3em;
+    position: relative;
+}
+.imgSlider{
+    width: 100%;
+    height: 100%;
+}
+.swiper-dim{
+    height: 20.938em !important;
+}
+.paginationStandar{
+    bottom: -2em !important;
+}
+.paginationStandarFacilities{
+    bottom: -.5em;
+}
+.swiperNormall{
+    display: none;
+}
+
+@media only screen and (min-width:1000px){
+    .swiperNormal{
+        display: none;
+    }
+    .swiperNormall{
+        display: block;
+        width: 100%;
+        height: 23.125em;
+        margin: 0 auto;
+        &__imgcontent{
+            width: 370px;
+            height: 100%;
+            display: inline-block;
+            margin-right: 1.875em;
+            &__img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .normalaux{
+        width: max-content;
+        height: 100%;
+        margin: 0 auto;
+    }
+}

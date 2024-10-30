@@ -1,22 +1,31 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\Booking;
-use Illuminate\Database\Eloquent\Factories\Factory;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Room;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Booking>
+ */
 class BookingFactory extends Factory
 {
-    protected $model = Booking::class;
-
-    public function definition()
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
     {
         return [
-            'userId' => \App\Models\User::factory(), 
-            'roomId' => \App\Models\Room::factory(), 
-            'startDate' => $this->faker->date(),
-            'endDate' => $this->faker->date(),
-            'totalAmount' => $this->faker->randomFloat(2, 100, 1000),
-            'status' => $this->faker->randomElement(['pending', 'confirmed', 'cancelled']),
+            'guest' => $this->faker->name(),
+            'orderdate' => $this->faker->dateTimeBetween('-1 years','now'),
+            'checkin' => $this->faker->dateTimeBetween('-1 years','now'),
+            'checkout' => $this->faker->dateTimeBetween('-1 years','now'),
+            'specialrequest' => $this->faker->paragraph(),
+            'room_id' => Room::factory(),
+            'status' => $this->faker->randomElement(['In Progress','Check Out', 'Check In'])
+   
         ];
     }
 }

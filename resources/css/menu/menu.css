@@ -1,0 +1,186 @@
+.menu {
+  width: 100%;
+  height: 56.563em;
+  margin-top: 10em;
+  position: relative;
+}
+.menu__content {
+  width: 135px;
+  height: 175px;
+  position: absolute;
+  right: 0;
+}
+.menu__content__img {
+  background-image: url("../../sources/imgs/donamenu.svg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu__contenttit {
+  padding: 0 1.5em;
+  padding-top: 12.188em;
+}
+.menu__contenttit__sub {
+  font-family: "Archivo-Regular";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  color: #777777;
+}
+.menu__contenttit__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: left;
+  margin: 0.5em 0;
+}
+
+.menuinfo {
+  padding: 0 1.25em;
+}
+.menuinfo__contentimg {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+.menuinfo__contentimg__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menuinfo__contenttxt {
+  display: inline-block;
+  width: 11.563em;
+  margin-left: 2em;
+  vertical-align: top;
+}
+.menuinfo__contenttxt__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  text-align: left;
+  margin-bottom: 0.6em;
+}
+.menuinfo__contenttxt__p {
+  font-family: "Roboto";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.menuinfo__contenttxt__img {
+  display: none;
+}
+
+.swiperMenu {
+  width: 100%;
+  height: 30em;
+}
+
+.posback {
+  width: 36px !important;
+  height: 36px !important;
+  left: 65% !important;
+  top: 100% !important;
+}
+
+.posnext {
+  width: 36px !important;
+  height: 36px !important;
+  top: 100% !important;
+  left: 76% !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .menu {
+    margin-bottom: 4em;
+  }
+  .menu__content {
+    width: 229px;
+    height: 229px;
+    position: absolute;
+    left: 0;
+    margin-left: 4em;
+  }
+  .menu__content__img {
+    background-image: url("../../sources/imgs/donutsleft.svg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menu__contenttit {
+    padding: 0 20.5em;
+    padding-top: 12.188em;
+  }
+  .menu__contenttit__sub {
+    margin-bottom: 4em;
+  }
+  .swiperMenu {
+    padding-left: 20.5em;
+    margin-top: 3em;
+  }
+  .slide-width {
+    width: 37.938em !important;
+  }
+  .slide-width:hover .menuinfo {
+    height: 100%;
+    background-color: #222222;
+    color: #fff;
+  }
+  .slide-width:hover .menuinfo__contenttxt__img {
+    display: block;
+  }
+  .menuinfo {
+    align-content: center;
+    height: 7.5em !important;
+    padding-left: 0;
+  }
+  .menuinfo__contenttxt {
+    height: 7.5em;
+    margin: 0;
+    padding-left: 1.2em;
+    align-content: center;
+    position: relative;
+  }
+  .menuinfo__contenttxt__p {
+    width: 20.793em;
+  }
+  .menuinfo__contenttxt__img {
+    position: absolute;
+    right: 2em;
+    top: 30%;
+    margin-right: 1em;
+  }
+  .posback, .posnext {
+    width: 70px !important;
+    height: 70px !important;
+    display: inline-block !important;
+    position: relative !important;
+    text-align: center;
+    align-content: center;
+  }
+  .contentnavigation {
+    width: 11.25em;
+    position: absolute;
+    top: 15em;
+    right: 15em;
+  }
+  .swiper-button-prev::after {
+    font-size: 1em !important;
+  }
+  .swiper-button-next::after {
+    font-size: 1em !important;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,82 @@
+@use '../mixin/buildHeaderMixin.scss';
+
+.aboutus{
+    padding: 5.375em 1.25em;
+    &__info{
+        &__sub{
+            @include buildHeaderMixin.subtitulo();
+            color: #777777;
+
+        }
+        &__tit{
+            @include buildHeaderMixin.titulo();
+            margin: .4em 0;
+            margin-top: .5em;
+        }
+        &__p{
+            width: 23em;
+            font-family: 'Archivo-Regular';
+            font-size: 0.88rem;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #777777;
+            margin-bottom: 2em;
+        }
+    }
+    &__btn{
+        @include buildHeaderMixin.btnsFirst();
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .contentaboutus{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 48.75em;
+        align-items: center;
+        & .aboutImgs{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1.875em;
+            margin-right: 1.875em;
+        }
+        & .aboutImgs:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            margin-right: 4.759em;
+        }
+        & .contentaboutimgs{
+            display: flex;
+        }
+    }
+    .aboutus{
+        &__info{
+            &__sub{
+                font-size: 0.875em;
+                font-weight: 700;
+                line-height: 15.23px;
+                letter-spacing: 2.799999952316284px;
+            }
+            &__tit{
+                font-size: 5em;
+                font-weight: 400;
+                line-height: 90px;
+                letter-spacing: -2.4000000953674316px;              
+            }
+            &__p{
+                width: 24.813em;
+                font-size: 0.875em;
+                font-weight: 400;
+                line-height: 24px;             
+            }
+        }
+    }
+
+    .slider{
+        &__sub{
+            color: #777777;
+        }
+    }
+}

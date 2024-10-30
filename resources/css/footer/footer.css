@@ -1,0 +1,205 @@
+footer .footer {
+  background-image: url("../../sources/imgs/footerfondo.svg");
+  background-color: #fff;
+  padding: 5.313em 1.25em;
+  padding-bottom: 0;
+}
+footer .footer__logo {
+  width: 80px;
+  height: 80px;
+  font-family: "Archivo-Regular";
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 43px;
+  text-align: center;
+  background-color: #BEAD8E;
+  align-content: center;
+  display: inline-block;
+  margin-right: 0.5em;
+  color: #fff;
+}
+footer .footer__name {
+  font-family: "Archivo-Regular";
+  font-size: 1.63rem;
+  font-weight: 700;
+  line-height: 28.29px;
+  letter-spacing: 2.5999999046px;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 0.2em;
+  color: black;
+  vertical-align: middle;
+  margin-top: 0.4em;
+}
+footer .footer__name span {
+  font-family: "Archivo-Regular";
+  font-size: 1.63rem;
+  font-weight: 400;
+  line-height: 28.29px;
+  letter-spacing: 2.5999999046px;
+  text-align: left;
+  display: inline-block;
+  color: black;
+}
+footer .footer__p {
+  font-family: "Archivo-Regular";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #777777;
+  margin: 2.625em 0;
+}
+footer .footer__contentprimary {
+  width: 40px;
+  height: 40px;
+  background: #F8F8F8;
+  align-content: center;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+footer .footer__contentprimary:hover {
+  background: #BEAD8E;
+}
+footer .footer__contentprimary:hover .contentSec {
+  background: #fff;
+}
+footer .footer__contentprimary:hover #facebook {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #be path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #linkedin path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #youtube path {
+  fill: #BEAD8E;
+}
+footer .footer__contentprimary:hover #Dribbble-Light-Preview path {
+  fill: #BEAD8E;
+}
+footer .footer__contentsecundary {
+  width: 24px;
+  height: 24px;
+  background: #777777;
+  margin: 0 auto;
+  border-radius: 10%;
+  align-content: center;
+}
+footer .footer__titservices {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: black;
+  margin: 1em 0;
+}
+footer .footer__lista {
+  color: #777777;
+}
+footer .footer__lista ul {
+  list-style: none;
+}
+footer .footer__lista ul li {
+  margin-bottom: 1.2em;
+}
+footer .footer__lista__content1, footer .footer__lista__content2 {
+  display: inline-block;
+}
+footer .footer__lista__content2 {
+  vertical-align: top;
+  margin-left: 4em;
+}
+footer .footer__titcontact {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: black;
+  margin: 1.5em 0;
+}
+footer .footer__contentcontact {
+  margin-bottom: 3.5em;
+}
+footer .footer__contentcontact__imgphone, footer .footer__contentcontact__txtphone {
+  display: inline-block;
+}
+footer .footer__contentcontact__txtphone {
+  margin-left: 1em;
+}
+footer .footer__contentcontact__txtphone__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: black;
+  display: block;
+  margin-bottom: 0.1em;
+}
+footer .footer__contentcontact__txtphone__num {
+  font-family: "Roboto";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  color: #777777;
+  display: block;
+}
+footer .footer__contentcontact:nth-child(3) {
+  margin-bottom: 2em;
+}
+footer .footer__copy {
+  width: 100%;
+  background-color: #F8F8F8;
+  color: black;
+  padding: 1.313em 1.25em;
+}
+footer .footer__copy__tit, footer .footer__copy__sub {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: -0.4799999893px;
+  text-align: left;
+  display: block;
+}
+footer .footer__copy__tit {
+  margin-bottom: 1em;
+}
+
+#facebook, #twitter, #be, #linkedin, #youtube {
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer .footer {
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: space-evenly;
+    height: 34.563em;
+  }
+  footer .footer .contentfooter1 {
+    width: 16.875em;
+  }
+  footer .footer .contentfooter2 {
+    width: 26.188em;
+  }
+  footer .footer .contentfooter3 {
+    width: 16.875em;
+  }
+  footer .footer__copy {
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+    align-items: center;
+  }
+  footer .footer__copy__tit, footer .footer__copy__sub {
+    display: inline-block;
+    margin: 0;
+  }
+}/*# sourceMappingURL=footer.css.map */

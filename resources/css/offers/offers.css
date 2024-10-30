@@ -1,0 +1,293 @@
+.offers__img {
+  background-image: url("../../sources/imgs/luxurydoublebed.jpg");
+  width: 100%;
+  height: 162px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 1em;
+}
+.offers__img__precio1 {
+  font-family: "Archivo-Regular";
+  font-size: 1.44rem;
+  font-weight: 700;
+  line-height: 25.02px;
+  text-align: right;
+  color: #BEAD8E;
+  position: absolute;
+  display: block;
+  right: 1em;
+  bottom: 2.2em;
+}
+.offers__img__precio1 span {
+  font-family: "Archivo-Regular";
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 13.06px;
+}
+.offers__img__precio2 {
+  font-family: "Archivo-Regular";
+  font-size: 1.88rem;
+  font-weight: 700;
+  line-height: 32.64px;
+  text-align: right;
+  color: #DE5777;
+  position: absolute;
+  display: block;
+  right: 0.8em;
+  bottom: 0.3em;
+}
+.offers__img__precio2 span {
+  font-family: "Archivo-Regular";
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 13.06px;
+}
+.offers__img__absolute {
+  display: none;
+}
+.offers__sub {
+  font-family: "Archivo-Regular";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+.offers__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: left;
+  margin-bottom: 0.6em;
+}
+.offers__p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 1.5em;
+}
+.offers__lista1, .offers__lista2 {
+  display: inline-block;
+  margin-right: 2em;
+}
+.offers__lista1 ul, .offers__lista2 ul {
+  list-style: none;
+}
+.offers__lista1 ul li, .offers__lista2 ul li {
+  font-family: "Roboto";
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 17.58px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 1em;
+}
+.offers__lista1 ul li img, .offers__lista2 ul li img {
+  margin-right: 1em;
+}
+.offers__btn {
+  width: 16.563em;
+  height: 4.5em;
+  background-color: #BEAD8E;
+  text-align: center;
+  align-content: center;
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.contentaux {
+  width: 90%;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.contentaux:nth-child(1) {
+  margin-top: 3em;
+}
+
+.contentaux2 {
+  padding: 0 1em;
+  padding-bottom: 2em;
+}
+.contentaux2 .contentPriceAux {
+  display: none;
+}
+
+.popular {
+  background-color: #222222;
+  padding: 3.5em 0;
+}
+.popular__sub {
+  font-family: "Archivo-Regular";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #BDAC8D;
+}
+.popular__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  text-align: center;
+  margin-bottom: 0.6em;
+  color: #fff;
+}
+
+.room--white {
+  width: 20.938em;
+  background-color: #fff;
+  padding-bottom: 2em;
+  margin: 0 auto;
+}
+.room--offers {
+  padding-bottom: 3rem;
+}
+
+.contentoffersAux {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.swiper-button-next--posOfeert {
+  top: 9em !important;
+}
+
+.slider__content__topbar--posOffers {
+  width: 80%;
+  top: 90% !important;
+  left: 10%;
+}
+
+.listblock {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider--offer {
+    padding-bottom: 3rem;
+  }
+  .contentoffersAux .slider__content__topbar--posOffers {
+    left: 9% !important;
+  }
+  .room--offers {
+    width: 370px !important;
+    height: 438px !important;
+    background: #fff;
+  }
+  .room--white {
+    padding-bottom: 3rem !important;
+    background: #222222;
+  }
+  .offers {
+    width: 73.125em;
+    margin: 0 auto;
+  }
+  .offers__img {
+    height: 35.625em;
+  }
+  .offers__img__precio1, .offers__img__precio2 {
+    display: none !important;
+  }
+  .offers__img__absolute1 {
+    display: block !important;
+    font-size: 1.88rem;
+    font-weight: 700;
+    line-height: 43.52px;
+    color: #BEAD8E;
+    position: absolute;
+    right: 1.5em;
+    top: 1.6em;
+  }
+  .offers__img__absolute1 span {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 17.41px;
+    text-align: right;
+    color: #BEAD8E;
+  }
+  .offers__img__absolute2 {
+    display: block !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 32.64px;
+    color: #DE5777;
+    position: absolute;
+    right: 1.4em;
+    top: 2.5em;
+  }
+  .offers__img__absolute2 span {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 17.41px;
+    text-align: right;
+    color: #DE5777;
+  }
+  .offers__tit {
+    border-bottom: 2px solid #ECECEC;
+    padding-bottom: 1em;
+  }
+  .offers__p {
+    width: 31em;
+  }
+  .contentaux2 {
+    position: absolute;
+    padding: 3.75em 3.661em;
+    z-index: 2000;
+    background: #fff;
+    bottom: -70%;
+    left: 6%;
+    border-top: 6px solid #BDAC8D;
+  }
+  .contentaux2--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contentaux2 .contentPriceAux {
+    display: block;
+  }
+  .contentaux {
+    border-top: 6px solid #BDAC8D;
+    position: relative;
+    margin-bottom: 30.438em;
+  }
+  .listnone {
+    display: none;
+  }
+  .listblock {
+    display: block;
+  }
+  .listblock__listan1 {
+    margin-right: 5em;
+  }
+  .popular--dark {
+    background: #222222;
+  }
+  .popular__tit {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -2.4000000954px;
+    margin-bottom: 1em;
+  }
+  .popular__sub {
+    margin-bottom: 5em;
+  }
+}/*# sourceMappingURL=offers.css.map */

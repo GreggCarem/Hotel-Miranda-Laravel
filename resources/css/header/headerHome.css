@@ -1,0 +1,95 @@
+header {
+  padding: 5.313em 1.25em;
+  background-color: #333333;
+  color: #fff;
+}
+header .subtitulo {
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+}
+header .titulo {
+  font-family: "OldStandardTT-Regular";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: left;
+  margin: 1em 0;
+}
+header .btns__taketour {
+  width: 16.563em;
+  height: 4.5em;
+  background-color: #BEAD8E;
+  text-align: center;
+  align-content: center;
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: #fff;
+}
+header .btns__learnmore {
+  width: 16.563em;
+  height: 4.5em;
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
+  text-align: center;
+  align-content: center;
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: #fff;
+  margin-top: 1.5em;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    padding-left: 12%;
+    height: 43.75em;
+    align-content: center;
+  }
+  header .subtitulo {
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.7999999523px;
+  }
+  header .titulo {
+    font-size: 7.5em;
+    line-height: 130px;
+    letter-spacing: -3.5999999046px;
+    margin: 0.415em 0;
+  }
+  header .btns {
+    display: flex;
+    align-items: flex-end;
+  }
+  header .btns__taketour {
+    margin-right: 2.5em;
+  }
+  .formavailability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formavailability__content:nth-child(1) {
+    width: 20.625em;
+    margin-right: 2em;
+  }
+  .formavailability__content:nth-child(2) {
+    width: 20.625em;
+    margin-right: 15%;
+  }
+  .formavailability--margin {
+    margin-top: 0 !important;
+  }
+  .formavailability__send {
+    margin-top: 0 !important;
+  }
+}/*# sourceMappingURL=headerHome.css.map */

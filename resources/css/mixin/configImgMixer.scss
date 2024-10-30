@@ -1,0 +1,8 @@
+@mixin imgconfig($ruta,$width,$height){
+    background-image: url($ruta);
+    width: $width;
+    height: $height;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

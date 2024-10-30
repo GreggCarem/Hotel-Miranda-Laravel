@@ -1,0 +1,73 @@
+@use '../mixin/configImgMixer.scss';
+
+.formavailability{
+    background-color: #222222;
+    padding: 2.25em 1.25em;
+    &--margin{
+        margin-top: 1.875em;
+    }
+    &__content{
+        &__tag, &__start, &__end{
+            display: block;
+        }
+        &__tag{
+            font-family: 'Roboto';
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 18.75px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 1.438em;
+        }
+        &__start,&__end{
+            width: 100%;
+        }
+        &__calendar{
+            &__content{
+                position: relative;
+                width: 16px;
+                height: 16px;
+                background-color: #222222;
+                align-content: end;
+                &__span{
+                    cursor: pointer;
+                    position: absolute;
+                    @include configImgMixer.imgconfig('../../imgs/calendarform.svg',100%,100%)
+                }
+                &__input{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #222222;
+                    border: none;
+                    opacity: 0;
+                }
+            }
+            &__inputtxt{
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #BEAD8E;
+                background-color: #222222;
+                outline: none;
+                padding-left: 2em;
+                padding-bottom: 1em;
+                color: #fff;
+            }
+        }
+    }
+    &__send{
+        width: 19.563em;
+        height: 4.5em;
+        background-color: #BEAD8E;
+        color: #fff;
+        font-family: 'Archivo-Regular';
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+        text-align: center;
+        border: 0px;
+        margin-top: 3em;
+        cursor: pointer;
+    }
+}

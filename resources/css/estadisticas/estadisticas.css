@@ -1,0 +1,46 @@
+.estadisticas {
+  padding: 3em 5.125em;
+  background-color: #222222;
+  text-align: center;
+  margin-top: 5em;
+  height: 68.75em;
+}
+.estadisticas__img {
+  margin-bottom: 1em;
+}
+.estadisticas__tit {
+  font-family: "Roboto";
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 81.84px;
+  color: #fff;
+  display: block;
+}
+.estadisticas__tit span {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.82px;
+}
+.estadisticas__sub {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.82px;
+  color: #999999;
+  display: block;
+}
+
+.estadisticasbloq {
+  margin-bottom: 4em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .estadisticas {
+    width: 73.125em;
+    height: 21.75em;
+    display: flex;
+    justify-content: space-between;
+    margin: 8em auto;
+  }
+}/*# sourceMappingURL=estadisticas.css.map */

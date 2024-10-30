@@ -1,0 +1,202 @@
+@use '../mixin/configImgMixer.scss';
+.aboutHeaderRoom{
+    height: max-content;
+}
+.contentAuxRoom{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.swiper-pagination-bull{
+    position: relative !important;
+    & span{
+        font-family: 'oswald';
+        font-size: 0.88rem;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+    }
+    & .swiper-pagination-bullet{
+        background: none;
+    }
+    & .swiper-pagination-bullet-active{
+        border-radius: 0%;
+        width: 35px;
+        height: 35px;
+        align-content: center;
+        color: #fff;
+    }
+}
+.sliderRooms{
+    width: auto !important;
+    height: auto !important;
+    padding: 0 1rem !important;
+    margin-top: 4rem;
+    &__contentPagination{
+        position: relative;
+    }
+}
+.slider{
+    &__content{
+        height: max-content;
+        &__topbar{
+            width: 100%;
+            position: absolute;
+            top: -10%;
+            right: 0;
+            left: 0;
+            box-shadow: 0px 8px 16px 0px #8A8A8A0D;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__img{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/bed.svg',16px,16px);
+            }
+            &__img2{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/wifi.svg',16px,16px);
+            }
+            &__img3{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/car.svg',16px,16px);
+            }
+            &__img4{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/acondicionado.svg',16px,16px);
+            }
+            &__img5{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/gym.svg',16px,16px);
+            }
+            &__img6{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/tabaco.svg',16px,16px);
+            }
+            &__img7{
+                display: inline-block;
+                @include configImgMixer.imgconfig('../../imgs/topbar/alcohol.svg',16px,16px);
+            }
+        }
+    }
+}
+.room{
+    &__imgRoom{
+        width: 100%;
+        height: 100%;
+    }
+    &__tit{
+        width: 100%;
+        font-family: 'OldStandardTT-Regular';
+        font-size: 1.50rem;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.7200000286102295px;
+        text-align: center;
+        margin-bottom: .8em;
+    }
+    &__p{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: .8em;
+        width: 18.125em;
+        font-family: 'Roboto';
+        font-size: 0.88rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: #777777;
+    }
+    &__content{
+        width: 100%;
+        text-align: -webkit-center;
+        &__precio{
+            font-family: 'Archivo-Regular';
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 17.41px;      
+            color: #BEAD8E;
+        }
+        &__state{
+            font-family: 'Archivo-Regular';
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 17.41px;
+            color: #BDBDBD;
+        }
+    }
+}
+@media only screen and (min-width:700px){
+    .contentAuxRoom{
+        width: 35rem;
+    }
+}
+@media only screen and (min-width:1000px){
+    .swiper-pagination-bull{
+        & span{
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 19px;
+        }
+        & .swiper-pagination-bullet{
+            background: none;
+        }
+        & .swiper-pagination-bullet-active{
+            border-radius: 0%;
+            width: 50px;
+            height: 50px;
+            align-content: center;
+            color: #fff;
+        }
+    }
+    .sliderRooms{
+        margin-top: 8rem;
+        &__contentPagination{
+            margin-bottom: 3rem;
+            & .swiper-but-room{
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }    
+        & .swiper-wrapper{
+            justify-content: center;
+        }
+    }
+    .aboutheader{
+        &__tit{
+            &--dim{
+                width: 27.875em !important;
+            }
+        }
+    }
+    .swiperrooms--dim{
+        width: 370px !important;
+    }
+    .room{
+        &__imgRoom{
+            &--dim{
+                //width: 370px;
+                 height: 240px;
+            }
+        }
+    }
+    .slider{
+        &__content{
+            &__topbar{
+                width: 100%;
+                height: 3.125em;
+                right: 2em;
+                top: -10% !important;
+                right: 0 !important;
+                left: 0 !important;
+            }
+        }
+    }
+    .contentAuxRoom{
+        width: max-content;
+        position: relative;
+        padding-top: 4rem;
+    }
+}

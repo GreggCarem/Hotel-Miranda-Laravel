@@ -1,0 +1,238 @@
+.slider {
+  margin-top: 3em;
+}
+.slider__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.slider__sub {
+  font-family: "Archivo-Regular";
+  font-size: 0.875em;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.slider__content {
+  width: 100%;
+  height: 15.25em;
+  position: relative;
+}
+.slider__content__topbar {
+  width: 17em;
+  height: 2.5em;
+  position: absolute;
+  top: -1.25em;
+  right: 18%;
+  z-index: 1000;
+  align-content: center;
+  background-color: #fff;
+}
+.slider__content__topbar__sub__img {
+  margin-right: 1em;
+  margin-left: 0.35em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/bed.svg");
+  width: 20px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img2 {
+  margin-right: 1em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/wifi.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img3 {
+  margin-right: 1em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/car.svg");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img4 {
+  margin-right: 1em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/acondicionado.svg");
+  width: 30px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img5 {
+  margin-right: 1em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/gym.svg");
+  width: 20px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img6 {
+  margin-right: 1em;
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/tabaco.svg");
+  width: 20px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__topbar__sub__img7 {
+  display: inline-block;
+  background-image: url("../../sources/imgs/topbar/alcohol.svg");
+  width: 20px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__content__info {
+  width: 20.938em;
+  height: 13.438em;
+  background-color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  z-index: 1000;
+  text-align: center;
+  align-content: space-evenly;
+  padding: 1.188em 1.5em;
+}
+.slider__content__info__tit {
+  font-family: "OldStandardTT-Regular";
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2000000477px;
+}
+.slider__content__info__p {
+  font-family: "Roboto";
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 1em 0;
+}
+.slider__content__info__precio {
+  font-family: "Archivo-Regular";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 43px;
+  color: #BEAD8E;
+}
+.slider__content__info__precio__night {
+  font-family: "Archivo-Regular";
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.swiper {
+  width: 100%;
+  height: 15.25em;
+}
+
+.swiperImage {
+  width: 100%;
+  height: 15.25em;
+}
+.swiperImage__img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-button-prev {
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #F8F8F8;
+}
+.swiper-button-prev::after {
+  font-size: 0.5em !important;
+  color: #111111;
+}
+.swiper-button-prev:hover {
+  background-color: #BDAC8D;
+}
+
+.swiper-button-next {
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #F8F8F8;
+}
+.swiper-button-next::after {
+  font-size: 0.5em !important;
+  color: #111111;
+}
+.swiper-button-next:hover {
+  background-color: #BDAC8D;
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider__content__info {
+    width: 43.125em;
+    height: 10.75em;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    padding: 2.5em;
+    gap: 2.438em;
+  }
+  .slider__content__info__p {
+    text-align: left;
+  }
+  .slider__content__topbar {
+    width: 19.375em;
+    height: 3.125em !important;
+    right: 30% !important;
+  }
+  .slider__content__topbar--redim {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    margin: 0 auto;
+  }
+  .slider__content__topbar__sub {
+    width: 100%;
+    height: 24px;
+    align-content: end;
+  }
+  .slider__content__topbar__sub__img, .slider__content__topbar__sub__img2, .slider__content__topbar__sub__img3, .slider__content__topbar__sub__img4, .slider__content__topbar__sub__img5, .slider__content__topbar__sub__img6 {
+    margin-right: 1.4em !important;
+  }
+  .slider__content__topbar__sub--redim {
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .swiperRoomsPicked {
+    width: 48.125em !important;
+    height: 31.25em !important;
+    margin: 0 auto;
+  }
+  .swiperImage {
+    height: 100%;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}/*# sourceMappingURL=slider.css.map */

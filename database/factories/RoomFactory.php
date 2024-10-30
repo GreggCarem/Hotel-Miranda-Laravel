@@ -2,26 +2,41 @@
 
 namespace Database\Factories;
 
-use App\Models\Room;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Photo;
 
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Room>
+ */
 class RoomFactory extends Factory
 {
-    protected $model = Room::class;
-
-    public function definition()
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
     {
+        $offer = $this->faker->boolean();
         return [
-            'roomNumber' => $this->faker->unique()->numberBetween(1000, 9999), 
-            'name' => $this->faker->word(),
-            'bedType' => $this->faker->randomElement(['single', 'double', 'queen', 'king']),
-            'facilities' => json_encode($this->faker->words(3)),
-            'rate' => $this->faker->numberBetween(50, 300),
-            'offerPrice' => $this->faker->numberBetween(40, 250),
-            'status' => $this->faker->randomElement(['available', 'booked']),
+            'room_number' => $this->faker->unique()->numberBetween(1000,9999),
+            'type_room' => $this->faker->randomElement(['Double Superior', 'Suite', 'Single Bed', 'Double Bed']),
             'description' => $this->faker->paragraph(),
-            'photo' => $this->faker->imageUrl(),
+            'offer' => $offer,
+            'price' => $this->faker->randomFloat(2,100,600),
+            'discount' => $offer ? $this->faker->numberBetween(10,60) : 0,
+            'cancellation' => $this->faker->paragraph(),
+            'status' => $this->faker->randomElement(['Available', 'Booked']),
         ];
-    
+    }
+
+    public function configure()
+    {
+        return $this->afterCreating(function ($room) {
+           
+            Photo::factory()->count(3)->create([
+                'room_id' => $room->id,
+            ]);
+        });
     }
 }

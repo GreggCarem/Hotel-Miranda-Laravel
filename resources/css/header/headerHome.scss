@@ -1,0 +1,69 @@
+@use '../mixin/buildHeaderMixin.scss';
+
+header{
+    padding: 5.313em 1.25em;
+    background-color: #333333;
+    color: #fff;
+    .subtitulo{
+        @include buildHeaderMixin.subtitulo();
+    }
+    .titulo{
+        @include buildHeaderMixin.titulo();
+        margin: 1em 0;
+    }
+    .btns{
+        &__taketour{
+            @include buildHeaderMixin.btnsFirst();
+        }
+        &__learnmore{
+            @include buildHeaderMixin.btnsSecond();
+            margin-top: 1.5em;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px){
+    header{
+        padding-left: 12%;
+        height: 43.75em;
+        align-content: center;
+        & .subtitulo{
+            font-size: 0.875em;
+            font-weight: 700;
+            line-height: 15.23px;
+            letter-spacing: 2.799999952316284px;
+        }
+        & .titulo{
+            font-size: 7.5em;
+            line-height: 130px;
+            letter-spacing: -3.5999999046325684px;
+            margin: .415em 0;
+        }
+        & .btns{
+            display: flex;
+            align-items: flex-end;
+            &__taketour{
+                margin-right: 2.5em;
+            }
+        }
+    }
+    .formavailability{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__content:nth-child(1){
+            width: 20.625em;
+            margin-right: 2em;
+        }
+        &__content:nth-child(2){
+            width: 20.625em;
+            margin-right: 15%;
+        }
+        &--margin{
+            margin-top: 0 !important;
+        }
+        &__send{
+            margin-top: 0 !important;
+        }
+    }
+}

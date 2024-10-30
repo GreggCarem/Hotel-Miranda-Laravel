@@ -1,0 +1,176 @@
+@use '../mixin/buildHeaderMixin.scss';
+.contact{
+    margin-top: 1em;
+    &__contentcontact{
+        width: 100%;
+        height: 14.75em;
+        padding-left: 2em;
+        padding-top: 3.5em;
+        position: relative;
+        &__imgphone{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2em;
+        }
+        &__txtphone{
+            display: inline-block;
+            &__tit{
+                font-family: 'OldStandardTT-Regular';
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 24px;
+                display: block;
+                margin-bottom: 1em;
+            }
+            &__num{
+                font-family: 'Roboto';
+                font-size: 0.88rem;
+                font-weight: 400;
+                line-height: 16.41px;
+                text-align: left;
+                color: #777777;
+                display: block;
+            }
+        }
+        &__num{
+            position: absolute;
+            right: .3em;
+            top: .02em;
+            font-family: 'Roboto';
+            font-size: 12.50rem;
+            font-weight: 700;
+            line-height: 234.38px;
+            letter-spacing: -6px;
+            text-align: left;
+            color: #F8F8F8;
+            z-index: -1;
+        }
+    }
+}
+
+.form{
+    margin-top: 1em;
+    padding: 1.5em;
+    padding-bottom: 4em;
+    &__headerimg{
+        width: 100%;
+        height: 450px;
+        margin-bottom: 4em;
+    }
+    &__inputs{
+        position: relative;
+        height: 33em;
+        &__contentname{
+            width: 100%;
+            height: 4.188em;
+            position: relative;
+            display: block;
+            margin-bottom: 1em;
+            &__img{
+                position: absolute;
+                left: 5%;
+                top: 40%;
+            }
+            &__input{
+                width: 100%;
+                height: 100%;
+                background-color: #F8F8F8;
+                border: none;
+                outline: none;
+                padding-left: 3.2em;
+                font-family: 'Roboto';
+                font-size: 0.94rem;
+                font-weight: 400;
+                line-height: 18.75px;
+                text-align: left;
+                color: #777777;
+            }
+            &__inputarea{
+                width: 100%;
+                height: 10.938em;
+                background-color: #F8F8F8;
+                border: none;
+                outline: none;
+                padding-left: 3.2em;
+                font-family: 'Roboto';
+                font-size: 0.94rem;
+                font-weight: 400;
+                line-height: 18.75px;
+                text-align: left;
+                color: #777777;
+                padding-top: 1.8em;
+                resize: none;
+            }
+        }
+    }
+    &__btn{
+        @include buildHeaderMixin.btnsFirst();
+        margin: 0 auto;
+        //margin-top: 10em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .contact{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        &__contentcontact{
+            width: 25.406em;
+        }
+    }
+    .form{
+        width: max-content;
+        margin: 0 auto;
+        text-align: -webkit-center;
+        margin-bottom: 5em;
+        &__headerimg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .formImgAux{
+            width: 1170px;
+            height: 700px;
+        }
+        &__inputs{
+            height: max-content;
+            margin-top: 5em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 0fr);
+            gap: 8px;
+            &__contentname{
+                &__input{
+                    padding-left: 6.2em;
+                }
+                &__inputarea{
+                    padding-left: 6.2em;
+                    padding-right: 2em;
+                    padding-bottom: 2em;
+                }
+                &__img{
+                    top: 38%;
+                    &--red{
+                        top: 16%;
+                    }
+                }
+            }
+            &__contentname:nth-child(3){
+                grid-column-start: 1;
+                grid-row-start: 2;
+            }
+            &__contentname:nth-child(4){
+                grid-column-start: 2;
+                grid-row-start: 2;
+            }
+            &__contentname:nth-child(5){
+                height: max-content;
+                grid-column: span 2 / span 2;
+                grid-row: span 3 / span 3;
+                grid-column-start: 1;
+                grid-row-start: 3;
+            }
+        }
+    }
+}

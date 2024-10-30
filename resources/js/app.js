@@ -1,7 +1,8 @@
 import './bootstrap';
-
-import Alpine from 'alpinejs';
-
-window.Alpine = Alpine;
-
-Alpine.start();
+import './sliderRooms';
+import './sliderFacilities';
+import './sliderPaginationStandar';
+import './sliderMenuInit';
+import './sliderinit';
+import './video';
+import './inputVailability'

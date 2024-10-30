@@ -1,0 +1,69 @@
+.formavailability {
+  background-color: #222222;
+  padding: 2.25em 1.25em;
+}
+.formavailability--margin {
+  margin-top: 1.875em;
+}
+.formavailability__content__tag, .formavailability__content__start, .formavailability__content__end {
+  display: block;
+}
+.formavailability__content__tag {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 1.438em;
+}
+.formavailability__content__start, .formavailability__content__end {
+  width: 100%;
+}
+.formavailability__content__calendar__content {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #222222;
+  align-content: end;
+}
+.formavailability__content__calendar__content__span {
+  position: absolute;
+  background-image: url("../../sources/imgs/calendarform.svg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formavailability__content__calendar__content__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  border: none;
+  opacity: 0;
+}
+.formavailability__content__calendar__inputtxt {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #BEAD8E;
+  background-color: #222222;
+  outline: none;
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+.formavailability__send {
+  width: 19.563em;
+  height: 4.5em;
+  background-color: #BEAD8E;
+  color: #fff;
+  font-family: "Archivo-Regular";
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.7999999523px;
+  text-align: center;
+  border: 0px;
+  margin-top: 3em;
+}/*# sourceMappingURL=availability.css.map */
