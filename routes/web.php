@@ -53,7 +53,8 @@ Route::resource('messages',Messages::class)->except(['index'])->middleware('auth
 Route::post('/messages', [MessageController::class, 'store'])->name('messages.store');
 
 Route::post('/messages', [Messages::class, 'store'])->name('messages.store');
-//f
+//fsdsd
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
