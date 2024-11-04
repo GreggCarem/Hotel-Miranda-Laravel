@@ -57,7 +57,7 @@
   color: #fff;
 }
 .facilities__card__img {
-  background-image: url("../../sources/imgs/facilidades/estrellas.svg");
+  background-image: url("../../imgs/facilidades/estrellas.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -68,7 +68,7 @@
   top: 7em;
 }
 .facilities__card__img2 {
-  background-image: url("../../sources/imgs/facilidades/time.svg");
+  background-image: url("../../imgs/facilidades/time.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -79,7 +79,7 @@
   top: 7em;
 }
 .facilities__card__img3 {
-  background-image: url("../../sources/imgs/facilidades/location.svg");
+  background-image: url("../../imgs/facilidades/location.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -90,7 +90,7 @@
   top: 7em;
 }
 .facilities__card__img4 {
-  background-image: url("../../sources/imgs/facilidades/cancelation.svg");
+  background-image: url("../../imgs/facilidades/cancelation.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -101,7 +101,7 @@
   top: 7em;
 }
 .facilities__card__img5 {
-  background-image: url("../../sources/imgs/facilidades/payment.svg");
+  background-image: url("../../imgs/facilidades/payment.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -112,7 +112,7 @@
   top: 7em;
 }
 .facilities__card__img6 {
-  background-image: url("../../sources/imgs/facilidades/offers.svg");
+  background-image: url("../../imgs/facilidades/offers.svg");
   width: 70px;
   height: 70px;
   background-position: center;
@@ -176,8 +176,7 @@
   }
   .facilities .auxfacilities {
     display: block;
-    -moz-columns: 3;
-         columns: 3;
+    columns: 3;
     margin: 0 auto;
     width: 60%;
     gap: 5em;

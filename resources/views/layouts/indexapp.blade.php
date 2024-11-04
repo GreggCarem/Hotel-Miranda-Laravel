@@ -28,7 +28,7 @@
         'resources/css/footer/footer.scss',
         'resources/css/aboutPage/about.scss',
         'resources/css/room/room.scss',
-        'resources/css/roomdetails/roomdetails.scss',
+       
         'resources/css/offers/offers.scss',
         'resources/css/contact/contact.scss',
     ])

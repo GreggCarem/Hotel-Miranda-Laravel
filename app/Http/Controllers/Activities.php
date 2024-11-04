@@ -82,9 +82,9 @@ class Activities extends Controller
     private function validateRequest(Request $request){
         $request->validate([
             'type' => 'required|string',
-            //'user_id' => 'required|integer',
+            
             'datetime' => 'required|date',
-            //'paid' => 'boolean',
+           
             'notes' => 'required|string',
             'satisfaction' => 'nullable|integer'
         ]);

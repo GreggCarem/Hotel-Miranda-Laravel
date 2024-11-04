@@ -64,14 +64,13 @@
   height: 200px;
   position: relative;
   margin-bottom: 2rem;
-  background: url("../../sources/video/poster.jpg") center/cover no-repeat;
+  background: url("../../video/poster.jpg") center/cover no-repeat;
 }
 .videoabout__container__play {
   width: 100%;
   height: 100%;
   margin-bottom: 2em;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   display: none;
 }
 .videoabout__container__button {
@@ -346,8 +345,7 @@
   .facilities .auxfacilities {
     width: 74.375em;
     height: 45.5em;
-    -moz-columns: unset;
-         columns: unset;
+    columns: unset;
     margin-bottom: 3em;
   }
   .facilities .auxfacilities div:nth-child(1), .facilities .auxfacilities div:nth-child(2) {

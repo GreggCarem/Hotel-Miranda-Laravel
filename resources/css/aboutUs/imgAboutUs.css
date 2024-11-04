@@ -20,7 +20,7 @@
   background-color: #222222;
 }
 .aboutImgs__contenttxt__img {
-  background-image: url("../../sources/imgs/team.svg");
+  background-image: url("../../imgs/team.svg");
   width: 68px;
   height: 50px;
   background-position: center;
@@ -28,7 +28,7 @@
   background-size: cover;
 }
 .aboutImgs__contenttxt__img2 {
-  background-image: url("../../sources/imgs/calendar.svg");
+  background-image: url("../../imgs/calendar.svg");
   width: 57px;
   height: 50px;
   background-position: center;

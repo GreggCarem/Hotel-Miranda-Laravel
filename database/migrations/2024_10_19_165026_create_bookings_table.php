@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->string('guest');
+            $table->string('guest')->default('1'); // Adjusted with a default value
             $table->dateTime('orderdate')->useCurrent();
             $table->dateTime('checkin');
             $table->dateTime('checkout');
-            $table->text('specialrequest')->nullable(true);
+            $table->text('specialrequest')->nullable();
             $table->unsignedBigInteger('room_id');
             $table->foreign('room_id')->references('id')->on('rooms');
-            $table->enum('status',['In Progress','Check Out', 'Check In']);
+            $table->enum('status', ['In Progress', 'Check Out', 'Check In']);
             $table->timestamps();
         });
     }
@@ -31,5 +31,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('bookings');
+
     }
 };

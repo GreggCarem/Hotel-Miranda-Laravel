@@ -17,7 +17,7 @@ nav .navclose {
   align-content: center;
 }
 nav .navclose__img {
-  background-image: url("../../sources/imgs/close.svg");
+  background-image: url("../../imgs/close.svg");
   width: 15.56px;
   height: 15.56px;
   background-position: center;
@@ -26,7 +26,7 @@ nav .navclose__img {
   display: none;
 }
 nav .navclose__menu {
-  background-image: url("../../sources/imgs/menu.svg");
+  background-image: url("../../imgs/menu.svg");
   width: 20px;
   height: 13px;
   background-position: center;
@@ -99,7 +99,7 @@ nav .naviconos {
   position: absolute;
 }
 nav .naviconos__perfil {
-  background-image: url("../../sources/imgs/perfil.svg");
+  background-image: url("../../imgs/perfil.svg");
   width: 24px;
   height: 24px;
   background-position: center;
@@ -107,7 +107,7 @@ nav .naviconos__perfil {
   background-size: cover;
 }
 nav .naviconos__search {
-  background-image: url("../../sources/imgs/search.svg");
+  background-image: url("../../imgs/search.svg");
   width: 24px;
   height: 24px;
   background-position: center;

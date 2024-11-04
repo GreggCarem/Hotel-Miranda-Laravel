@@ -8,6 +8,9 @@
 .estadisticas__img {
   margin-bottom: 1em;
 }
+.estadisticas__img img {
+  margin: 0 auto;
+}
 .estadisticas__tit {
   font-family: "Roboto";
   font-size: 3.75rem;

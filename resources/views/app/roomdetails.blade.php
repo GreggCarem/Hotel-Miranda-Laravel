@@ -2,6 +2,8 @@
 
 @section('title', 'Contact')
 
+
+
 @section('content')
     <!--header about-->
     <section class="aboutheader aboutHeaderRoom">

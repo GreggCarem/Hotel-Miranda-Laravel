@@ -28,8 +28,9 @@
   align-content: end;
 }
 .formavailability__content__calendar__content__span {
+  cursor: pointer;
   position: absolute;
-  background-image: url("../../sources/imgs/calendarform.svg");
+  background-image: url("../../imgs/calendarform.svg");
   width: 100%;
   height: 100%;
   background-position: center;
@@ -52,6 +53,7 @@
   outline: none;
   padding-left: 2em;
   padding-bottom: 1em;
+  color: #fff;
 }
 .formavailability__send {
   width: 19.563em;
@@ -66,4 +68,5 @@
   text-align: center;
   border: 0px;
   margin-top: 3em;
+  cursor: pointer;
 }/*# sourceMappingURL=availability.css.map */

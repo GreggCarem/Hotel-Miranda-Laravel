@@ -128,7 +128,6 @@
     width: 25.406em;
   }
   .form {
-    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
     text-align: -webkit-center;
@@ -137,15 +136,13 @@
   .form__headerimg {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .form .formImgAux {
     width: 1170px;
     height: 700px;
   }
   .form__inputs {
-    height: -moz-max-content;
     height: max-content;
     margin-top: 5em;
     display: grid;
@@ -176,7 +173,6 @@
     grid-row-start: 2;
   }
   .form__inputs__contentname:nth-child(5) {
-    height: -moz-max-content;
     height: max-content;
     grid-column: span 2/span 2;
     grid-row: span 3/span 3;
