@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main # Change this to your deployment branch if different
+      - main # Change this to your deployment branch if needed
 
 env:
   VITE_APP_API_URL: ${{ secrets.API_URL }}
@@ -19,7 +19,7 @@ jobs:
       # Step 2: Set up Node.js
       - uses: actions/setup-node@v3
         with:
-        node-version: "20.x"
+          node-version: "20.x"
 
       # Step 3: Install dependencies and build
       - run: npm install
@@ -35,7 +35,7 @@ jobs:
           script: |
             cd /var/www/miranda_laravel
             git pull origin main
-            npm install --production  # Optional if you need it on the server
+            npm install --production  # Optional if needed on the server
             npm run build  # Optional if needed on the server
             php artisan migrate --force  # Run Laravel migrations
-            sudo systemctl restart nginx  # Restart services, replace with your service if needed
+            sudo systemctl restart nginx  # Restart services; replace with your service if needed
