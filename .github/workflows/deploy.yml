@@ -3,14 +3,14 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main # Change this to your deployment branch if needed
+      - main # Adjust to your deployment branch if different
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout the code
       - uses: actions/checkout@v3
 
       # Step 2: SSH into EC2 and deploy
@@ -22,9 +22,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/miranda_laravel
-            git config --global --add safe.directory /var/www/miranda_laravel
-            sudo git pull origin main
-            composer install --no-dev --optimize-autoloader
-            php artisan migrate --force
-            php artisan config:cache
-            sudo systemctl restart nginx  # Replace with your web service if different (e.g., apache2)
+            git config --global --add safe.directory /var/www/miranda_laravel  # Ensure git works in this directory
+            sudo git pull origin main  # Update the code from the repository
+            sudo composer install --no-dev --optimize-autoloader  # Install Laravel dependencies
+            php artisan migrate --force  # Run Laravel migrations
+            php artisan config:cache  # Optional: Cache the configuration for better performance
+            sudo systemctl restart apache2  # Replace with nginx if needed
