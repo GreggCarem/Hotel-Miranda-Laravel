@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main # Adjust to your deployment branch if different
+      - main # Adjust as needed
 
 jobs:
   deploy:
@@ -13,7 +13,7 @@ jobs:
       # Step 1: Checkout the code
       - uses: actions/checkout@v3
 
-      # Step 2: SSH into EC2 and deploy
+      # Step 2: SSH and Deploy to EC2
       - name: SSH and Deploy to EC2
         uses: appleboy/ssh-action@v0.1.5
         with:
@@ -23,8 +23,8 @@ jobs:
           script: |
             cd /var/www/miranda_laravel
             git config --global --add safe.directory /var/www/miranda_laravel  # Ensure git works in this directory
-            sudo git pull origin main  # Update the code from the repository
+            sudo git pull origin main  # Update code from the repository
             sudo composer install --no-dev --optimize-autoloader  # Install Laravel dependencies
             php artisan migrate --force  # Run Laravel migrations
-            php artisan config:cache  # Optional: Cache the configuration for better performance
+            php artisan config:cache  # Optional: Cache configuration
             sudo systemctl restart apache2  # Replace with nginx if needed
