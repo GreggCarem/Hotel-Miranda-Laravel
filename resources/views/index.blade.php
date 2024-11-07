@@ -4,7 +4,7 @@
 
 @section('content')
 <header>
-    <h3 class="subtitulo">THE ULTIMATE LUXURY EXPERIENCE *2</h3>
+    <h3 class="subtitulo">THE ULTIMATE LUXURY EXPERIENCE </h3>
     <h1 class="titulo">The Perfect<br>Base For You</h1>
     <div class="btns">
         <div class="btns__taketour">TAKE A TOUR</div>
