@@ -33,8 +33,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/miranda_laravel
-            git pull origin main
-            npm install --production  # Optional if needed on the server
-            npm run build  # Optional if needed on the server
-            php artisan migrate --force  # Run Laravel migrations
-            sudo systemctl restart nginx  # Restart services; replace with your service if needed
+            sudo git pull origin main
+            sudo npm install --production  # Add sudo if permissions are needed
+            sudo npm run build             # Add sudo if required
+            php artisan migrate --force
+            sudo systemctl restart nginx   # Restart services with sudo
