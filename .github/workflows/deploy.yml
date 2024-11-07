@@ -1,9 +1,12 @@
-name: Deploy Miranda Project
+name: Deploy to EC2
 
 on:
   push:
     branches:
-      - main
+      - main # Change this to your deployment branch if different
+
+env:
+  VITE_APP_API_URL: ${{ secrets.API_URL }}
 
 jobs:
   deploy:
@@ -11,41 +14,28 @@ jobs:
 
     steps:
       # Step 1: Checkout code
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # Step 2: Set up SSH
-      - name: Install SSH Key
-        uses: webfactory/ssh-agent@latest
+      # Step 2: Set up Node.js
+      - uses: actions/setup-node@v3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          node-version: "18.x"
 
-      # Step 3: Run deployment commands on the server
-      - name: Deploy to Server
-        run: |
-          ssh -o StrictHostKeyChecking=no mikelmindieta@123.45.67.89 << 'EOF'
-          cd /path/to/Miranda
+      # Step 3: Install dependencies and build
+      - run: npm install
+      - run: npm run build
 
-          # Pull the latest code
-          git pull origin main
-
-          # Install Python dependencies
-          pip install -r requirements.txt
-
-          # Install Laravel dependencies
-          composer install
-
-          # Run Django migrations
-          python manage.py migrate
-
-          # Run Laravel migrations
-          php artisan migrate
-
-          # Restart the server
-          sudo systemctl restart gunicorn
-          sudo systemctl restart nginx
-
-          # For Apache, use:
-          # sudo systemctl restart apache2
-
-          EOF
+      # Step 4: Deploy to EC2 via SSH
+      - name: SSH and Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.EC2_SERVER_IP }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/miranda_laravel
+            git pull origin main
+            npm install --production  # Optional if you need it on the server
+            npm run build  # Optional if needed on the server
+            php artisan migrate --force  # Run Laravel migrations
+            sudo systemctl restart nginx  # Restart services, replace with your service if needed
